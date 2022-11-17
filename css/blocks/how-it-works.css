@@ -6,7 +6,7 @@
 .how-it-works__top {
   display: flex;
   justify-content: space-between;
-  /* padding-bottom: 52px; */
+  padding-bottom: 52px;
 }
 .how-it-works__head {
   max-width: 584px;
@@ -38,7 +38,7 @@
 .how-it-works__step-one {
   /* padding-bottom: 52px; */
   max-width: 390px;
-  margin-right: 111px;
+  margin-right: 95px;
 }
 .step__title {
   position: relative;
@@ -70,26 +70,37 @@
   font-size: 20px;
   line-height: 150%;
 }
+.step__img-wrapper {
+  position: relative;
+  padding-bottom: 126%;
+}
 .step__img {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .how-it-works__step-two {
-  margin-top: 340px;
-  margin-right: 79px;
+  margin-top: 287px;
+  margin-right: 95px;
 }
 .step__title-two {
   padding-left: 72px;
 }
 .how-it-works__step-three {
-  margin-top: 106px;
+  margin-top: 54px;
 }
 .step__title-three {
   margin-bottom: 46px;
 }
-.step__title {
-}
+
 .step__text-three {
   margin-bottom: 48px;
 }
