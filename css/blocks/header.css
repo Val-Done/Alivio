@@ -7,10 +7,7 @@
 .header__row {
   display: flex;
   align-items: center;
-  
-
 }
-
 
 .header__nav {
   margin-left: 172px;
@@ -21,7 +18,9 @@
 .header__nav ul {
   display: flex;
   justify-content: space-between;
-  column-gap: 72px;
+}
+.header__nav li + li {
+  margin-left: 72px;
 }
 .header__nav a {
   transition: color 0.2s ease;
@@ -34,10 +33,14 @@
   color: #01996d;
 }
 .header__login {
-  display: flex;
-  align-items: center;
-  column-gap: 35px;
+  text-align: center;
+  /* display: flex;
+  align-items: center; */
+  /* column-gap: 35px; */
   margin-left: auto;
+}
+.header__login * + * {
+  margin-left: 35px;
 }
 .header__login a {
   color: black;
@@ -49,7 +52,31 @@
 .header__login-btn {
   display: inline-block;
   min-height: 50px;
-  /* width: 173px; */
   padding: 13px 50px;
+}
+
+/** Adaptive **/
+
+@media (max-width: 1199px) {
+  .header__row {
+    justify-content: space-between;
+  }
+  .header__nav {
+    margin-left: 50px;
+  }
+  .header__nav li + li {
+    margin-left: 50px;
+  }
+  .header__login {
+    
+    margin-left: 30px;
+}
+
+
+}
+@media (max-width: 991px) {
+  .header__nav, .header__login {
+    display: none;
+  }
   
 }

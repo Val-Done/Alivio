@@ -38,6 +38,8 @@
 }
 
 .story__video {
+  border-radius: 18px;
+  overflow: hidden;
   max-width: 895px;
   position: relative;
 }
@@ -53,7 +55,7 @@
   -o-transform: translate(-50%, -50%);
 }
 .story__video-overlay {
-  border-radius: 18px;
+
   position: absolute;
   left: 0;
   top: 0;
