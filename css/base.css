@@ -6,6 +6,12 @@ body {
   color: #424242;
 }
 
+@media (max-width: 991px) {
+  .body {
+    font-size: 18px;
+  }
+}
+
 /* Utility */
 
 .none {
@@ -41,6 +47,12 @@ body {
 
 .container-wide {
   width: 1536px;
+}
+@media (max-width:1535px) {
+  .container-wide {
+    width: 100%;
+  }
+  
 }
 
 .btn {
