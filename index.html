@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./css/blocks/product.css">
   <link rel="stylesheet" href="./css/blocks/footer.css">
   <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
+  <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
   <!-- fonts -->
   <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css">
   <link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css">
@@ -48,6 +49,24 @@
     </div>
 
   </header>
+  <div class="mobile-nav">
+    <img class="mobile-nav__logo logo" src="./img/header/Logo.svg" alt="Logo">
+
+    <nav class="mobile__nav-list nav">
+      <ul>
+        <li><a href="#">Why Alivio</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile__login login">
+      <a href="#!">Sign in</a>
+      <button class="header__login-btn btn">Start Trial</button>
+    </div>
+  </div>
+
   <main>
     <section class="home">
       <div class="container">
@@ -140,12 +159,18 @@
             <button class="story__btn btn">Let’s get started</button>
           </div>
           <div class="story__video">
-            <div class="story__video-overlay">
+            <!-- <div class="story__video-overlay">
               <button class="story__video-btn">
                 <img src="./img/story-video/Icon/large/play-white.svg" alt="play">
               </button>
-            </div>
-            <img class="story__video-object" src="./img/story-video/preview.jpg" alt="video">
+            </div> -->
+            <!-- <img class="story__video-object" src="./img/story-video/preview.jpg" alt="video"> -->
+
+            <video class="story__video-object" id="video-story">
+              <source src="./img/story-video/coverr-using-laptop-on-the-couch-7942-1080p.mp4" type="video/mp4">
+
+
+            </video>
 
 
           </div>
@@ -214,7 +239,7 @@
   </footer>
 
 
-
+  <script src="./js/main.js"></script>
 
 </body>
 

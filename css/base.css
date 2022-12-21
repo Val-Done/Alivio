@@ -65,3 +65,6 @@ body {
   min-height: 65px;
   border-radius: 4px;
 }
+.no-scroll {
+  overflow: hidden;
+}
